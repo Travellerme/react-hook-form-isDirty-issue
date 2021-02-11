@@ -73,7 +73,8 @@ function App() {
                         <InputCreator fieldPrefix="productsCart2" {...conf} />
                     </FieldGroup>
                 </FormProvider>
-                <div className="alert-danger"><b>isValid: {isValid.toString()}</b></div>
+                <div className="alert-danger"><b>isDirty: {isDirty.toString()}</b></div>
+                <pre id="json">{JSON.stringify(watch())}</pre>
 
         </div>
     );
